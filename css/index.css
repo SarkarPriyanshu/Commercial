@@ -1,0 +1,58 @@
+/* Commercial Style Sheet */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.Navigation-Wrapper {
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+/* Navigation Styling */
+.Basic-Option .nav-link {
+  display: inline-block;
+  text-decoration: none;
+}
+.Basic-Option li {
+  list-style-type: none;
+}
+.Basic-Option i {
+  margin: 0 0.5rem;
+}
+/* Carousel Part */
+.carousel-item img {
+  width: 100%;
+  height: 75%;
+}
+/* Carousel Part End*/
+
+/* Navigation Styling End */
+/* Latest Arrivals */
+.Latest-Arrival-Products img {
+  width: 100%;
+  height: 100%;
+}
+/* Latest Arrivals End*/
+/* Deal Of The Day */
+.Deal-carousel-Product {
+  padding: 1rem;
+}
+.Deal-carousel-Product img {
+  height: 100%;
+}
+.Deal-Advertisment {
+  background-image: url(/Commercial/Images/dealdiscount.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8.4rem;
+}
+
+/* Deal Of The Day End */

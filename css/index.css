@@ -16,6 +16,9 @@
 }
 
 /* Navigation Styling */
+#Home_Icon{
+  font-size: 20px;
+}
 .Basic-Option .nav-link {
   display: inline-block;
   text-decoration: none;
@@ -24,7 +27,14 @@
   list-style-type: none;
 }
 .Basic-Option i {
+  font-size: 15px;
   margin: 0 0.5rem;
+}
+#Search_input{
+  width: 25rem;
+  /* transition: 2s ease; */
+  /* transition-property:visibility; */
+  visibility: hidden;
 }
 /* Carousel Part */
 .carousel-item img {
@@ -48,7 +58,7 @@
   height: 100%;
 }
 .Deal-Advertisment {
-  background-image: url(/MyTemplates/Commercial/Images/dealdiscount.jpg);
+  background-image: url(../Images/dealdiscount.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,15 +91,19 @@
 }
 .Left_Arrow i {
   position: absolute;
-  top: 250px;
+  top: 200px;
   left: 10px;
   font-size: 30px;
   color: #fff;
-  width: 40px;
-  height: 30px;
+  width: 50px;
+  height: 80px;
   border-radius: 5px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   /* display: none; */
+  
 }
 .Left_Arrow i:hover {
   background-color: rgba(0, 0, 0, 0.5);
@@ -97,16 +111,19 @@
 }
 .Right_Arrow i {
   position: absolute;
-  top: 250px;
+  top: 200px;
   right: 0;
   font-size: 30px;
   z-index: 1;
   color: #fff;
-  width: 40px;
-  height: 30px;
+  width: 50px;
+  height: 80px;
   border-radius: 5px;
   text-align: center;
   /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Right_Arrow i:hover {
@@ -114,3 +131,18 @@
   /* display: block; */
 }
 /* Latest Mobiles Ends */
+/* Latest Laptops */
+.Latest-Laptops{
+  overflow: hidden;
+  position: relative;
+  /* overflow: ; */
+}
+.Latest-Laptop-inner-div{
+  width: 1570px;
+}
+.Laptop_Details{
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+}
+/* Latest Laptops Ends */

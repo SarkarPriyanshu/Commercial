@@ -51,6 +51,23 @@
   height: 75%;
 }
 /* Carousel Part End*/
+.navbar-nav {
+  position: relative;
+}
+.Menu {
+  display: none;
+  width: 100%;
+  background-color: #17b978;
+  position: absolute;
+  top: 17rem;
+  z-index: 2;
+  padding: 3rem 2rem;
+  height: 100%;
+}
+.Menu_Show {
+  display: block;
+  transition: all 1s ease;
+}
 
 /* Navigation Styling End */
 /* Latest Arrivals */
@@ -168,7 +185,7 @@ footer {
   background-color: #17b978;
   color: #fff;
 }
-dl {
+footer dl {
   font-size: 10px;
 }
 dt {
@@ -179,12 +196,12 @@ dd {
   margin: 0.8rem 0;
   color: #fff;
 }
-.btn-outline-light {
+footer .btn-outline-light {
   color: #086972;
   border: 1px solid #086972;
   background-color: #fff;
 }
-.Footer {
+footer .Footer {
   color: #fff;
 }
 /* footer End*/

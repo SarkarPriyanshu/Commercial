@@ -8,6 +8,15 @@ document.getElementById("Search_Icon").addEventListener("click", function() {
   Input.style.transition = "all 1s ease";
 });
 //Search Engine End
+//Menu
+var links = document.getElementsByClassName("Catagory-Link");
+for (i = 0; i < links.length; i++) {
+  this.addEventListener("click", function() {
+    var menu = document.querySelector(".Menu");
+    menu.classList.toggle("Menu_Show");
+  });
+}
+//Menu End
 // Latest Mobile
 document.getElementById("Right").addEventListener("click", function() {
   var Div = document.querySelector(".Latest-mobile-inner-div-1");

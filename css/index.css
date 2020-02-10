@@ -1,8 +1,14 @@
-/* Commercial Style Sheet */
+/**
+ * /* Commercial Style Sheet
+ *
+ * @format
+ */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* color: #086972; */
 }
 .Navigation-Wrapper {
   background-image: url();
@@ -16,8 +22,11 @@
 }
 
 /* Navigation Styling */
-#Home_Icon{
+#Home_Icon {
   font-size: 20px;
+}
+.Basic-Option {
+  /* background-color: ; */
 }
 .Basic-Option .nav-link {
   display: inline-block;
@@ -30,7 +39,7 @@
   font-size: 15px;
   margin: 0 0.5rem;
 }
-#Search_input{
+#Search_input {
   width: 25rem;
   /* transition: 2s ease; */
   /* transition-property:visibility; */
@@ -103,7 +112,6 @@
   flex-direction: column;
   justify-content: center;
   /* display: none; */
-  
 }
 .Left_Arrow i:hover {
   background-color: rgba(0, 0, 0, 0.5);
@@ -132,17 +140,51 @@
 }
 /* Latest Mobiles Ends */
 /* Latest Laptops */
-.Latest-Laptops{
+.Latest-Laptops {
   overflow: hidden;
   position: relative;
   /* overflow: ; */
 }
-.Latest-Laptop-inner-div{
+.Latest-Laptop-inner-div {
   width: 1570px;
 }
-.Laptop_Details{
+.Laptop_Details {
   width: 100px;
   height: 50px;
   overflow: hidden;
 }
 /* Latest Laptops Ends */
+/* Other Gagets */
+.Other-Gagets {
+  overflow: hidden;
+  position: relative;
+}
+.Other-Gagets-inner-div {
+  width: 1570px;
+}
+/* Other Gagets Ends */
+/* footer */
+footer {
+  background-color: #17b978;
+  color: #fff;
+}
+dl {
+  font-size: 10px;
+}
+dt {
+  color: #086972;
+  margin: 1rem 0;
+}
+dd {
+  margin: 0.8rem 0;
+  color: #fff;
+}
+.btn-outline-light {
+  color: #086972;
+  border: 1px solid #086972;
+  background-color: #fff;
+}
+.Footer {
+  color: #fff;
+}
+/* footer End*/

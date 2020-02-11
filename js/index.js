@@ -11,9 +11,10 @@ document.getElementById("Search_Icon").addEventListener("click", function() {
 //Menu
 var links = document.getElementsByClassName("Catagory-Link");
 for (i = 0; i < links.length; i++) {
-  this.addEventListener("click", function() {
+  links[i].addEventListener("click", function() {
     var menu = document.querySelector(".Menu");
     menu.classList.toggle("Menu_Show");
+    // console.log(links[i]);
   });
 }
 //Menu End

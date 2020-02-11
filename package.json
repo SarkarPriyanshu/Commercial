@@ -1,0 +1,21 @@
+{
+  "name": "Commercial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarkarPriyanshu/Commercial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://SarkarPriyanshu.github.io/Commercial",
+  "bugs": {
+    "url": "https://github.com/SarkarPriyanshu/Commercial/issues"
+  },
+  "homepage": "https://github.com/SarkarPriyanshu/Commercial#readme"
+}

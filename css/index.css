@@ -55,17 +55,20 @@
   position: relative;
 }
 .Menu {
-  display: none;
+  /* display: none; */
+  opacity: 0;
   width: 100%;
   background-color: #17b978;
   position: absolute;
-  top: 17rem;
+  top: 18rem;
   z-index: 2;
   padding: 3rem 2rem;
   height: 100%;
+  transition: all 1s ease;
 }
 .Menu_Show {
-  display: block;
+  opacity: 1;
+  /* display: block; */
   transition: all 1s ease;
 }
 

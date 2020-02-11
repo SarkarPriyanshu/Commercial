@@ -1,0 +1,210 @@
+/**
+ * /* Commercial Style Sheet
+ *
+ * @format
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* color: #086972; */
+}
+.Navigation-Wrapper {
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+/* Navigation Styling */
+#Home_Icon {
+  font-size: 20px;
+}
+.Basic-Option {
+  /* background-color: ; */
+}
+.Basic-Option .nav-link {
+  display: inline-block;
+  text-decoration: none;
+}
+.Basic-Option li {
+  list-style-type: none;
+}
+.Basic-Option i {
+  font-size: 15px;
+  margin: 0 0.5rem;
+}
+#Search_input {
+  width: 25rem;
+  /* transition: 2s ease; */
+  /* transition-property:visibility; */
+  visibility: hidden;
+}
+/* Carousel Part */
+.carousel-item img {
+  width: 100%;
+  height: 75%;
+}
+/* Carousel Part End*/
+.navbar-nav {
+  position: relative;
+}
+.Menu {
+  /* display: none; */
+  opacity: 0;
+  width: 100%;
+  background-color: #17b978;
+  position: absolute;
+  top: 18rem;
+  z-index: 2;
+  padding: 3rem 2rem;
+  height: 100%;
+  transition: all 1s ease;
+}
+.Menu_Show {
+  opacity: 1;
+  /* display: block; */
+  transition: all 1s ease;
+}
+
+/* Navigation Styling End */
+/* Latest Arrivals */
+.Latest-Arrival-Products img {
+  width: 100%;
+  height: 100%;
+}
+/* Latest Arrivals End*/
+/* Deal Of The Day */
+.Deal-carousel-Product {
+  padding: 1rem;
+}
+.Deal-carousel-Product img {
+  height: 100%;
+}
+.Deal-Advertisment {
+  background-image: url(../Images/dealdiscount.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8.4rem;
+}
+
+/* Deal Of The Day End */
+/* Latest Mobiles */
+.Latest-Mobiles {
+  position: relative;
+  overflow: hidden;
+}
+.Latest-mobile-inner-div {
+  width: 1570px;
+}
+.Latest-mobile-inner-div-1 {
+  /* position: relative !important; */
+}
+.card {
+  text-align: center;
+  width: 33.33% !important;
+  height: 280px;
+}
+.card img {
+  width: 70px;
+}
+
+.card small {
+  color: rgba(0, 255, 98, 0.801);
+}
+.Left_Arrow i {
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  font-size: 30px;
+  color: #fff;
+  width: 50px;
+  height: 80px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* display: none; */
+}
+.Left_Arrow i:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* display: block; */
+}
+.Right_Arrow i {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  font-size: 30px;
+  z-index: 1;
+  color: #fff;
+  width: 50px;
+  height: 80px;
+  border-radius: 5px;
+  text-align: center;
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Right_Arrow i:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* display: block; */
+}
+/* Latest Mobiles Ends */
+/* Latest Laptops */
+.Latest-Laptops {
+  overflow: hidden;
+  position: relative;
+  /* overflow: ; */
+}
+.Latest-Laptop-inner-div {
+  width: 1570px;
+}
+.Laptop_Details {
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+}
+/* Latest Laptops Ends */
+/* Other Gagets */
+.Other-Gagets {
+  overflow: hidden;
+  position: relative;
+}
+.Other-Gagets-inner-div {
+  width: 1570px;
+}
+/* Other Gagets Ends */
+/* footer */
+footer {
+  background-color: #17b978;
+  color: #fff;
+}
+footer dl {
+  font-size: 10px;
+}
+dt {
+  color: #086972;
+  margin: 1rem 0;
+}
+dd {
+  margin: 0.8rem 0;
+  color: #fff;
+}
+footer .btn-outline-light {
+  color: #086972;
+  border: 1px solid #086972;
+  background-color: #fff;
+}
+footer .Footer {
+  color: #fff;
+}
+/* footer End*/

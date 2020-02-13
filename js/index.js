@@ -3,9 +3,8 @@
 // Commercial Js File
 //Search Engine
 document.getElementById("Search_Icon").addEventListener("click", function() {
-  var Input = document.getElementById("Search_input");
-  Input.style.visibility = "visible";
-  Input.style.transition = "all 1s ease";
+  var Input = document.querySelector(".Search_input");
+  Input.classList.toggle("Search_Toggle");
 });
 //Search Engine End
 //Menu
@@ -74,3 +73,27 @@ document.getElementById("Left__Arrow").addEventListener("click", function() {
   Div.style.transition = "all 1s ease";
 });
 //Other Gagets Ends
+
+// window.addEventListener("load", function() {
+//   var width = screen.width;
+//   if (width > 767) {
+//     var links = document.querySelector(".Basic-Option-links").children;
+//     for (i = 0; i < links.length; i++) {
+//       var child = links[i].childNodes;
+//       console.log(child);
+//     }
+//   }
+// });
+
+// function myFunction(x) {
+//   if (x.matches) {
+//     var text = document.querySelector(".link-text");
+//     for (i = 0; i < text.length; i++) {
+//       Console.log(text[i]);
+//     }
+//   }
+// }
+
+// var x = window.matchMedia("(max-width:767px)");
+// myFunction(x);
+// x.addEventListener(myFunction);

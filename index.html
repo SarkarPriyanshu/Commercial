@@ -20,53 +20,113 @@
       <!-- Navigation -->
       <div class="Navigation-Wrapper container-fluid py-3">
         <div class="container-fluid">
-          <!-- Basic Optins -->
-          <div
-            class="Basic-Option border-bottom d-flex flex-row justify-content-between align-items-center py-3"
-          >
+          <!-- Basic Optins Desktop -->
+          <div class="d-none d-md-block">
             <div
-              class="Home-Icon d-flex flex-row justify-content-around align-items-center"
+              class="Basic-Option border-bottom d-flex flex-row justify-content-between align-items-center py-3"
             >
-              <a href="index.html"
-                ><i id="Home_Icon" class="fas fa-home"></i
-              ></a>
-            </div>
-            <div class="d-flex flex-row align-items-center">
-              <input
-                id="Search_input"
-                class="form-control"
-                type="search"
-                autocomplete="off"
-                placeholder="Search"
-              />
-            </div>
-            <div
-              class="Basic-Option-links d-flex flex-row justify-content-around align-items-center"
-            >
-              <li>
-                <a id="Search_Icon" class="mx-1 nav-link" href="#"
-                  >Search<i class="fas fa-search"></i>
-                </a>
-              </li>
-              <li>
-                <a class="mx-1 nav-link" href="#"
-                  >WishList<i class="far fa-heart"></i
+              <div
+                class="Home-Icon d-flex flex-row justify-content-around align-items-center"
+              >
+                <a href="index.html"
+                  ><i id="Home_Icon" class="fas fa-home"></i
                 ></a>
-              </li>
-              <li>
-                <a class="mx-1 nav-link" href="#"
-                  >Account<i class="fas fa-user-alt"></i
-                ></a>
-              </li>
-              <li>
-                <a class="mx-1 nav-link" href="#"
-                  >Cart
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-              </li>
+              </div>
+              <div class="Input-Div d-flex flex-row align-items-center">
+                <input
+                  class="form-control Search_input"
+                  type="search"
+                  autocomplete="off"
+                  placeholder="Search"
+                />
+              </div>
+              <div
+                class="Basic-Option-links d-flex flex-row justify-content-around align-items-center"
+              >
+                <li class="nav-item">
+                  <a id="Search_Icon" class="mx-1 nav-link" href="#"
+                    ><span class="link-text">Search</span>
+                    <i class="fas fa-search"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="mx-1 nav-link" href="#">
+                    <span class="link-text">WishList</span
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="mx-1 nav-link" href="#">
+                    <span class="link-text">Account</span
+                    ><i class="fas fa-user-alt"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="mx-1 nav-link" href="#">
+                    <span class="link-text">Cart</span>
+                    <i class="fas fa-shopping-cart"></i>
+                  </a>
+                </li>
+              </div>
             </div>
           </div>
-          <!-- Basic Optins End -->
+          <!-- Basic Optins Desktop End -->
+          <!-- Basic Option Mobile/Tablet -->
+          <div class="d-block d-md-none">
+            <div
+              class="Basic-Option border-bottom d-flex flex-row justify-content-between align-items-center py-3"
+            >
+              <div
+                class="Home-Icon d-flex flex-row justify-content-around align-items-center"
+              >
+                <a href="index.html"
+                  ><i id="Home_Icon" class="fas fa-home"></i
+                ></a>
+              </div>
+              <div
+                id="searchInput"
+                class="Input-Div d-flex flex-row align-items-center collapse"
+              >
+                <input
+                  class="form-control Search_input"
+                  type="search"
+                  autocomplete="off"
+                  placeholder="Search"
+                />
+              </div>
+              <div
+                class="Basic-Option-links d-flex flex-row justify-content-around align-items-center"
+              >
+                <li class="nav-item">
+                  <a
+                    id="Search_Icon"
+                    data-toggle="collapse"
+                    href="#searchInput"
+                    role="button"
+                    class="mx-1 nav-link"
+                  >
+                    <i class="fas fa-search"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="mx-1 nav-link" href="#">
+                    <i class="far fa-heart"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="mx-1 nav-link" href="#">
+                    <i class="fas fa-user-alt"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="mx-1 nav-link" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                  </a>
+                </li>
+              </div>
+            </div>
+          </div>
+          <!-- Basic Option Mobile/Tablet End -->
         </div>
         <!-- Branding -->
         <header class="Branding container-fluid py-5">
@@ -324,7 +384,7 @@
     </div>
     <!-- Latest Arrivals Ends -->
     <!-- Deal Of the Day  -->
-    <div class="container-fluid my-5">
+    <div class="container-fluid my-3 my-md-5">
       <div class="container">
         <div
           class="py-3 Deals-Header d-flex flex-row justify-content-between align-items-center"
@@ -336,7 +396,7 @@
           class="Deals-Wrapper d-flex flex-row justify-content-between align-items-center"
         >
           <!-- Deals Section Carousel -->
-          <div class="Deal-carousel col-9">
+          <div class="Deal-carousel col-12 col-md-9">
             <div
               id="carouselExampleControls"
               class="carousel slide shadow-sm"
@@ -425,13 +485,15 @@
             </div>
           </div>
           <!-- Deals Section Carousel End-->
-          <div class="Deal-Advertisment col-3 shadow-sm"></div>
+          <div
+            class="Deal-Advertisment d-none d-md-block col-md-3 shadow-sm"
+          ></div>
         </div>
       </div>
     </div>
     <!-- Deal Of the Day End  -->
     <!-- Latest Mobiles  -->
-    <div class="container-fluid">
+    <div class="container-fluid my-3 my-md-5">
       <div class="Latest-Mobiles container Latest-mobile-outer-div">
         <!-- Heading -->
         <div
@@ -561,7 +623,7 @@
     </div>
     <!-- Latest Mobiles Ends -->
     <!-- Latest Laptops -->
-    <div class="container-fluid">
+    <div class="container-fluid my-3 my-md-5">
       <div class="Latest-Laptops container Latest-Laptops-outer-div">
         <!-- Heading -->
         <div
@@ -724,7 +786,7 @@
     </div>
     <!-- Latest Laptops Ends -->
     <!-- Other Gagets -->
-    <div class="container-fluid">
+    <div class="container-fluid my-3 my-md-5">
       <div class="Other-Gagets container Other-Gagets-outer-div">
         <!-- Heading -->
         <div
@@ -877,13 +939,13 @@
         </p>
       </div>
     </div>
-    <footer class="container-fluid mt-5">
-      <div class="container py-5">
+    <footer class="container-fluid mt-5 ">
+      <div class="container py-md-5">
         <div
-          class="Wapper-div d-flex flex-row justify-content-around align-items-center py-5"
+          class="Wapper-div d-flex flex-column flex-md-row justify-content-around align-items-center"
         >
           <div
-            class="col-6 d-flex flex-row justify-content-around align-items-start py-5"
+            class="col-12 col-md-6 d-flex flex-row justify-content-around align-items-start py-md-5"
           >
             <dl>
               <dt>ABOUT</dt>
@@ -915,7 +977,7 @@
           </div>
           <hr />
           <div
-            class="col-6 d-flex flex-row justify-content-around align-items-start py-5"
+            class="col-12 col-md-6 d-flex flex-row justify-content-around align-items-start py-md-5"
           >
             <div class="form-group">
               <div class="my-2">
@@ -934,9 +996,9 @@
         </div>
       </div>
       <div
-        class="Footer container d-flex flex-row justify-content-between align-items-center"
+        class="Footer container d-flex flex-column flex-md-row justify-content-between align-items-center "
       >
-        <div><h3>TechFest</h3></div>
+        <div class=""><h3>TechFest</h3></div>
         <div>
           <p>
             Copyright &copy;2020 All rights reserved | This template is designed

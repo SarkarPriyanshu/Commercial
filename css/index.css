@@ -13,7 +13,7 @@
 @media (max-width: 767px) {
   html {
     /* overflow-x: hidden; */
-    padding: 0 0.2rem;
+    padding: 0 0.1rem;
   }
 }
 .Navigation-Wrapper {
@@ -31,9 +31,7 @@
 #Home_Icon {
   font-size: 20px;
 }
-.Basic-Option {
-  /* background-color: ; */
-}
+
 .Basic-Option .nav-link {
   display: inline-block;
   text-decoration: none;
@@ -62,26 +60,15 @@
   color: #fff;
 }
 @media (max-width: 767px) {
-  .Basic-Option {
-    /* position: relative; */
-  }
-  /* .Input-Div {
-    position: absolute;
-    top: 5rem;
-    left: 10px;
-  } */
   .Search_input {
-    /* text-align: center; */
     margin: 0.5rem 0;
     width: 4rem;
     transition: all 1s ease;
-    /* opacity: 1; */
   }
-  /* .link-text {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  } */
+
+  .Basic-Option .nav-link {
+    padding: 0.5rem;
+  }
 }
 
 /* Carousel Part */
@@ -94,7 +81,6 @@
   position: relative;
 }
 .Menu {
-  /* display: none; */
   opacity: 0;
   width: 100%;
   background-color: #17b978;
@@ -107,7 +93,6 @@
 }
 .Menu_Show {
   opacity: 1;
-  /* display: block; */
   transition: all 1s ease;
 }
 
@@ -139,6 +124,9 @@
 @media (max-width: 767px) {
   .Latest-Arrival {
     margin: 5rem 0;
+  }
+  .Deals {
+    margin: 3rem 0;
   }
 }
 
@@ -179,7 +167,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* display: none; */
 }
 .Left_Arrow i:hover {
   background-color: rgba(0, 0, 0, 0.5);

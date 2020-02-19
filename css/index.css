@@ -11,9 +11,9 @@
   /* color: #086972; */
 }
 @media (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-    padding: 0 0.5rem;
+  html {
+    /* overflow-x: hidden; */
+    padding: 0 0.2rem;
   }
 }
 .Navigation-Wrapper {

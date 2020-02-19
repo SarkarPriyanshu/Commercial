@@ -8,11 +8,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* color: #086972; */
 }
+
 @media (max-width: 767px) {
-  html {
-    /* overflow-x: hidden; */
+  body {
     padding: 0 0.1rem;
   }
 }
@@ -31,8 +30,8 @@
 #Home_Icon {
   font-size: 20px;
 }
-
 .Basic-Option .nav-link {
+  color: #086972;
   display: inline-block;
   text-decoration: none;
 }
@@ -40,6 +39,7 @@
   list-style-type: none;
 }
 .Basic-Option i {
+  color: #086972;
   font-size: 15px;
   margin: 0 0.5rem;
 }
@@ -58,6 +58,10 @@
 .btn-outline-olive {
   background-color: #17b978;
   color: #fff;
+}
+
+.Catagory-List .nav-link {
+  color: #086972;
 }
 @media (max-width: 767px) {
   .Search_input {

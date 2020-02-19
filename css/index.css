@@ -11,9 +11,9 @@
   /* color: #086972; */
 }
 @media (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-    padding: 0 0.5rem;
+  html {
+    /* overflow-x: hidden; */
+    padding: 0 0.2rem;
   }
 }
 .Navigation-Wrapper {
@@ -56,6 +56,11 @@
   opacity: 1;
   transition: all 1s ease;
 }
+
+.btn-outline-olive {
+  background-color: #17b978;
+  color: #fff;
+}
 @media (max-width: 767px) {
   .Basic-Option {
     /* position: relative; */
@@ -66,9 +71,11 @@
     left: 10px;
   } */
   .Search_input {
-    width: 0rem;
-    /* transition: all 1s ease; */
-    /* opacity: 0; */
+    /* text-align: center; */
+    margin: 0.5rem 0;
+    width: 4rem;
+    transition: all 1s ease;
+    /* opacity: 1; */
   }
   /* .link-text {
     width: 0;

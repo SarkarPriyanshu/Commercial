@@ -8,12 +8,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* color: #086972; */
 }
+
 @media (max-width: 767px) {
-  html {
-    /* overflow-x: hidden; */
-    padding: 0 0.2rem;
+  body {
+    padding: 0 0.1rem;
   }
 }
 .Navigation-Wrapper {
@@ -31,10 +30,8 @@
 #Home_Icon {
   font-size: 20px;
 }
-.Basic-Option {
-  /* background-color: ; */
-}
 .Basic-Option .nav-link {
+  color: #086972;
   display: inline-block;
   text-decoration: none;
 }
@@ -42,6 +39,7 @@
   list-style-type: none;
 }
 .Basic-Option i {
+  color: #086972;
   font-size: 15px;
   margin: 0 0.5rem;
 }
@@ -61,27 +59,20 @@
   background-color: #17b978;
   color: #fff;
 }
+
+.Catagory-List .nav-link {
+  color: #086972;
+}
 @media (max-width: 767px) {
-  .Basic-Option {
-    /* position: relative; */
-  }
-  /* .Input-Div {
-    position: absolute;
-    top: 5rem;
-    left: 10px;
-  } */
   .Search_input {
-    /* text-align: center; */
     margin: 0.5rem 0;
     width: 4rem;
     transition: all 1s ease;
-    /* opacity: 1; */
   }
-  /* .link-text {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  } */
+
+  .Basic-Option .nav-link {
+    padding: 0.5rem;
+  }
 }
 
 /* Carousel Part */
@@ -94,23 +85,31 @@
   position: relative;
 }
 .Menu {
-  /* display: none; */
   opacity: 0;
   width: 100%;
   background-color: #17b978;
   position: absolute;
-  top: 18rem;
-  z-index: 5;
+  top: 20rem;
+  z-index: -1;
   padding: 3rem 2rem;
-  height: 100vh;
+  height: 40rem;
   transition: all 1s ease;
 }
 .Menu_Show {
+  /* position: fixed; */
+  top: 18rem;
   opacity: 1;
-  /* display: block; */
   transition: all 1s ease;
+  z-index: 5;
 }
 
+.Menu_Show_Mac {
+  /* position: fixed; */
+  top: 12rem;
+  opacity: 1;
+  transition: all 1s ease;
+  z-index: 5;
+}
 /* Navigation Styling End */
 /* Latest Arrivals */
 .Latest-Arrival {
@@ -139,6 +138,9 @@
 @media (max-width: 767px) {
   .Latest-Arrival {
     margin: 5rem 0;
+  }
+  .Deals {
+    margin: 3rem 0;
   }
 }
 
@@ -179,7 +181,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* display: none; */
 }
 .Left_Arrow i:hover {
   background-color: rgba(0, 0, 0, 0.5);

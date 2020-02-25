@@ -1,0 +1,610 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title class="title">Mac Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <!-- Custom Css Link -->
+    <link rel="stylesheet" href="/css/MacPro.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/jquery.exzoom.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="Navigation-Wrapper container-fluid py-3">
+      <div class="container-fluid">
+        <!-- Basic Optins Desktop -->
+        <div class="d-none d-md-block">
+          <div
+            class="Basic-Option border-bottom d-flex flex-row justify-content-between align-items-center py-3"
+          >
+            <div
+              class="Home-Icon d-flex flex-row justify-content-around align-items-center"
+            >
+              <a href="/index.html"
+                ><i id="Home_Icon" class="fas fa-home"></i
+              ></a>
+            </div>
+            <div class="Input-Div d-flex flex-row align-items-center">
+              <input
+                class="form-control Search_input"
+                type="search"
+                autocomplete="off"
+                placeholder="Search"
+              />
+            </div>
+            <div
+              class="Basic-Option-links d-flex flex-row justify-content-around align-items-center"
+            >
+              <li class="nav-item">
+                <a id="Search_Icon" class="mx-1 nav-link" href="#"
+                  ><span class="link-text">Search</span>
+                  <i class="fas fa-search"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="mx-1 nav-link" href="#">
+                  <span class="link-text">WishList</span
+                  ><i class="far fa-heart"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="mx-1 nav-link" href="#">
+                  <span class="link-text">Account</span
+                  ><i class="fas fa-user-alt"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="mx-1 nav-link" href="#">
+                  <span class="link-text">Cart</span>
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <!-- Basic Optins Desktop End -->
+        <!-- Basic Option Mobile/Tablet -->
+        <div class="d-block d-md-none">
+          <div
+            class="Basic-Option border-bottom d-flex flex-row justify-content-between align-items-center py-3"
+          >
+            <div
+              class="Home-Icon d-flex flex-row justify-content-around align-items-center"
+            >
+              <a href="index.html"
+                ><i id="Home_Icon" class="fas fa-home"></i
+              ></a>
+            </div>
+            <div
+              class="Basic-Option-links d-flex flex-row justify-content-around align-items-center"
+            >
+              <li class="nav-item">
+                <a
+                  id="Search_Icon"
+                  data-toggle="collapse"
+                  href="#search_Input"
+                  role="button"
+                  class="mx-1 nav-link"
+                >
+                  <i class="fas fa-search"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="mx-1 nav-link" href="#">
+                  <i class="far fa-heart"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="mx-1 nav-link" href="#">
+                  <i class="fas fa-user-alt"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="mx-1 nav-link" href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+            </div>
+          </div>
+          <div id="search_Input" class="collapse">
+            <div
+              class="d-flex flex-row align-items-center justify-content-center py-3"
+            >
+              <input
+                class="form-control w-75 "
+                type="search"
+                autocomplete="off"
+                placeholder="Search"
+              />
+              <button class="btn btn-outline-olive mx-2">Search</button>
+            </div>
+          </div>
+        </div>
+        <!-- Basic Option Mobile/Tablet End -->
+      </div>
+      <!-- Branding -->
+      <header class="Branding container-fluid ">
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-between align-items-center p-5 p-md-0"
+        >
+          <div class="Brand-Name">
+            <h1>TechFest</h1>
+          </div>
+          <nav class="Catagory-List navbar-nav p-1 p-md-5">
+            <li
+              class="nav-item d-none d-md-flex flex-row justify-content-between justify-content-md-around align-items-center"
+            >
+              <a class="nav-link Catagory-Link px-3 mx-1 " href="#"
+                >Monitors
+              </a>
+              <a class="nav-link Catagory-Link px-3 mx-1" href="#">Laptops </a>
+              <a class="nav-link Catagory-Link px-3 mx-1" href="#"
+                >Pc Components
+              </a>
+              <a class="nav-link Catagory-Link px-3 mx-1" href="#">Mobiles </a>
+              <a class="nav-link Catagory-Link px-3 mx-1" href="#">Tablets </a>
+              <a class="nav-link Catagory-Link px-3 mx-1" href="#">Camera </a>
+              <a class="nav-link Catagory-Link px-3 mx-1" href="#"
+                >Accessories
+              </a>
+            </li>
+          </nav>
+        </div>
+        <!-- Menu -->
+        <div class="Menu d-none d-md-block">
+          <div class="d-flex flex-row justify-content-around align-items-start">
+            <!-- Monitors -->
+            <span class="m-3">
+              <dl class="p-2">
+                <dt>Monitors</dt>
+                <dd>Touchscreens Monitor</dd>
+                <dd>Plasma Screen Monitor</dd>
+                <dd>OLED Monitors</dd>
+                <dd>Gaming Monitors</dd>
+                <dd>Curved Monitors</dd>
+              </dl>
+            </span>
+            <!-- Monitors End -->
+            <!-- Laptops -->
+            <span class="m-3">
+              <dl class="p-2">
+                <dt>Laptops</dt>
+                <dd>Gaming Laptops</dd>
+                <dd>Home Laptops</dd>
+                <dd>Work Laptops</dd>
+                <dd>Light Weight Laptops</dd>
+              </dl>
+            </span>
+            <!-- Laptops End -->
+            <!-- Pc Components -->
+            <span class="m-3">
+              <dl class="p-2">
+                <dt>Pc Components</dt>
+                <dd>Central Processing Unit</dd>
+                <dd>Motherboard</dd>
+                <dd>Ram</dd>
+                <dd>Power Supply Unit</dd>
+                <dd>Hard Drive</dd>
+                <dd>SSD</dd>
+                <dd>Graphic Card</dd>
+                <dd>Cooling System</dd>
+              </dl>
+            </span>
+            <!-- Pc Components End -->
+            <!-- Mobiles -->
+            <span class="m-3">
+              <dl class="p-2">
+                <dt>Mobiles</dt>
+                <dd>Apple</dd>
+                <dd>Samsung</dd>
+                <dd>Sony</dd>
+                <dd>Huawei</dd>
+                <dd>Redmi</dd>
+                <dd>Realme</dd>
+                <dd>Vivo</dd>
+                <dd>Oppo</dd>
+              </dl>
+            </span>
+            <!-- Mobiles End -->
+            <!-- Tablets -->
+            <span class="m-3">
+              <dl class="p-2">
+                <dt>Tablets</dt>
+                <dd>Apple</dd>
+                <dd>Samsung</dd>
+                <dd>Sony</dd>
+                <dd>Lenovo</dd>
+                <dd>Redmi</dd>
+              </dl>
+            </span>
+            <!-- Tablets End -->
+            <!-- Camera -->
+            <span class="m-3">
+              <dl class="p-2">
+                <dt>Camera</dt>
+                <dd>DSLR</dd>
+                <dd>Consumer</dd>
+                <dd>Lens</dd>
+                <dd>Camera Charger</dd>
+                <dd>Camera Battery</dd>
+                <dd>Tripots</dd>
+              </dl>
+            </span>
+            <!-- Camera End -->
+            <!-- Accessories -->
+            <span class="m-3">
+              <dl class="p-2">
+                <dt>Accessories</dt>
+                <dd>Mobile Accessories</dd>
+                <dd>Camera Accessories</dd>
+                <dd>Laptop Accessories</dd>
+                <dd>Tech Accessories</dd>
+                <dd>Computer Accessories</dd>
+                <dd>Other Accessories</dd>
+                <dd>Speakers</dd>
+                <dd>Headphones</dd>
+                <dd>earphones</dd>
+              </dl>
+            </span>
+            <!-- Accessories End -->
+          </div>
+        </div>
+        <!-- Menu Ends -->
+      </header>
+      <!-- Branding -->
+    </div>
+    <!-- Navigation End -->
+    <!-- Product -->
+    <div class=" container-fluid my-5">
+      <div
+        class="Products container d-flex  flex-column flex-md-row justify-content-around align-items-center mb-5 mt-5"
+      >
+        <!-- Product Div -->
+        <div class="col-12 col-md-6">
+          <div class="exzoom" id="exzoom">
+            <!-- Images -->
+            <div class="exzoom_img_box">
+              <ul class="exzoom_img_ul">
+                <li><img src="/Images/MacPro1.jpg" /></li>
+                <li><img src="/Images/MacPro2.jpg" /></li>
+                <li><img src="/Images/MacPro3.jpg" /></li>
+                <li><img src="/Images/MacPro4.jpg" /></li>
+                <li><img src="/Images/MacPro5.jpg" /></li>
+                <li><img src="/Images/MacPro6.jpg" /></li>
+                <li><img src="/Images/MacPro7.jpg" /></li>
+                <li><img src="/Images/MacPro8.jpg" /></li>
+              </ul>
+            </div>
+            <!-- Nav Buttons -->
+            <div class="exzoom_nav"></div>
+            <!-- <a href="https://www.jqueryscript.net/tags.php?/Thumbnail/">Thumbnail</a>-->
+          </div>
+        </div>
+        <!-- Product Div -->
+        <!-- Product Details -->
+        <div class="col-12 col-md-6 my-5 my-md-0">
+          <h2 class="mb-3">Custumize your Mac Pro</h2>
+          <section class="border-bottom py-4 text-muted">
+            <p>
+              2.5GHz 28-Core Intel Xeon W Processor, Turbo Boost up to 4.4GHz
+            </p>
+            <p>1.5TB (12x128GB) of DDR4 ECC memory</p>
+            <p>Two Radeon Pro Vega II Duo with 2x32GB of HBM2 memory each</p>
+            <p>8TB SSD Storage</p>
+            <p>Apple Afterburner Card</p>
+            <p>Stainless steel frame with wheels</p>
+            <p>Magic Mouse 2</p>
+            <p>Magic Keyboard with Numeric Keypad - US English</p>
+          </section>
+        </div>
+        <!-- Product Details -->
+      </div>
+      <!-- Product Specifications -->
+      <div class="Specifications container-fluid">
+        <div class="container">
+          <h1 class="text-center">Technical Specifications</h1>
+          <div
+            class="d-flex flex-row justify-content-between align-items-center"
+          >
+            <!-- Wrapper Div -->
+            <div class="wrapper-div col-12 text-center text-md-left ">
+              <!-- Processor -->
+              <div
+                class="my-5 d-flex flex-row justify-content-between align-items-center"
+              >
+                <div class="col-12 col-md-6">
+                  <h2 class="col-12 col-md-9 p-0">
+                    <strong>Processor</strong>
+                    <span class="text-muted">
+                      Configure from an 8-core to 28-core Intel Xeon W processor
+                    </span>
+                  </h2>
+                  <section class="my-5">
+                    <h4 class="p-0"><strong>28-core</strong></h4>
+                    <span class="text-muted">
+                      <p>3.5GHz intel Xeon W</p>
+                      <p>28 cores,56 threads</p>
+                      <p>Turbo Boost up to 4.4GHz</p>
+                      <p>66MB cache</p>
+                      <p>Support 2933Mhz memory</p>
+                    </span>
+                  </section>
+                </div>
+                <!-- Figure -->
+                <div class="col-6 d-none d-md-block text-center">
+                  <figure class="my-5 p-5">
+                    <img class="w-100" src="/Images/macpro-1.png" alt="" />
+                  </figure>
+                </div>
+                <!-- Figure End-->
+              </div>
+              <!-- Processor End-->
+              <!-- Memory -->
+              <div
+                class="my-5 d-flex flex-row justify-content-between align-items-center"
+              >
+                <div class="col-12 col-md-6">
+                  <h2 class="col-12 col-md-9 p-0">
+                    <strong>Memory</strong>
+                    <span class="text-muted">
+                      Configure up to 1.5TB of DDR4 ECC memory in 12 user
+                      -accessible DIMM slots
+                    </span>
+                  </h2>
+                  <section class="my-5">
+                    <h4 class="p-0"><strong>1.5TB</strong></h4>
+                    <span class="text-muted">
+                      <p>12 128 DIMMs</p>
+                      <p>Required 24-core or</p>
+                      <p>28-core processor</p>
+                    </span>
+                  </section>
+                </div>
+                <div class="col-6 d-none d-md-block text-center">
+                  <figure class="my-5 p-5">
+                    <img class="w-100" src="/Images/macpro-2.png" alt="" />
+                  </figure>
+                </div>
+              </div>
+              <!-- Memory End -->
+              <!-- Graphics -->
+              <div
+                class="my-5 d-flex flex-row justify-content-between align-items-center "
+              >
+                <div class="col-12 col-md-6">
+                  <h2 class="col-12 col-md-9 p-0">
+                    <strong>Graphics</strong>
+                    <span class="text-muted">
+                      Configure two MPX Modules with up to four GPUs
+                    </span>
+                  </h2>
+                  <section class="my-5">
+                    <h4 class="p-0">
+                      <strong>AMD Radeon Pro Vega II Duo</strong>
+                    </h4>
+                    <span class="text-muted">
+                      <p>
+                        Two Vega II GPUs, each with 64 compute units and 4,096
+                        stream processors
+                      </p>
+                      <p>
+                        64GB of HBM2 memory (32GB per GPU), each with 1TB/s
+                        memory bandwidth
+                      </p>
+                      <p>
+                        Up to 28.3 teraflops single precision or 56.6 teraflops
+                        half precision
+                      </p>
+                      <p>
+                        Onboard Infinity Fabric Link connection connects the two
+                        Vega II GPUs at up to 84 Gbps
+                      </p>
+                      <p>
+                        Four Thunderbolt 3 ports and one HDMI 2.0 port on card
+                      </p>
+                    </span>
+                  </section>
+                </div>
+                <div class="col-6 d-none d-md-block text-center">
+                  <figure class="my-5 p-5">
+                    <img class="w-100" src="/Images/macpro-3.png" alt="" />
+                  </figure>
+                </div>
+              </div>
+              <!-- Graphics End -->
+              <!-- Battery -->
+              <div
+                class="my-5 d-flex flex-row justify-content-between align-items-center"
+              >
+                <div class="col-12 col-md-6">
+                  <h2 class="col-12 col-md-9 p-0">
+                    <strong>Power Supply</strong>
+                    <span class="text-muted">
+                      1.4 Kilowatts
+                    </span>
+                  </h2>
+                  <section class="my-5">
+                    <h4 class="p-0">
+                      <strong>Maximum continuous power:</strong>
+                    </h4>
+                    <span class="text-muted">
+                      <p>1280W at 108–125V or 220–240V</p>
+                      <p>1180W at 100–107V</p>
+                    </span>
+                  </section>
+                </div>
+                <div class="col-md-6 d-none d-md-block text-center">
+                  <figure class="my-5 p-5">
+                    <img class="w-100" src="/Images/macpro-4.png" alt="" />
+                  </figure>
+                </div>
+              </div>
+              <!-- Battery Ends -->
+              <!-- Expantion Slopts -->
+              <div
+                class="my-5 d-flex flex-row justify-content-between align-items-center"
+              >
+                <div class="col-12 col-md-6 ">
+                  <h2 class="col-12 col-md-9 p-0">
+                    <strong>Expansion Slots</strong>
+                    <span class="text-muted">
+                      Eight PCI Express expansion slots
+                    </span>
+                  </h2>
+                  <section class="my-5">
+                    <h4 class="p-0">
+                      <strong
+                        >Two MPX Modules or up to four PCI Express card
+                        slots</strong
+                      >
+                    </h4>
+                    <span class="text-muted">
+                      <p>Each MPX bay provides:</p>
+                      <p>x16 gen 3 bandwidth for graphics</p>
+                      <p>x8 gen 3 bandwidth for Thunderbolt</p>
+                      <p>DisplayPort video routing</p>
+                      <p>Up to 500W power for an MPX Module</p>
+                    </span>
+                  </section>
+                </div>
+                <div class="col-md-6 d-none d-md-block text-center">
+                  <figure class="my-5 p-5">
+                    <img class="w-100" src="/Images/macpro-5.png" alt="" />
+                  </figure>
+                </div>
+              </div>
+              <!-- Expantion Slopts End -->
+              <!-- Storage -->
+              <div
+                class="my-5 d-flex flex-row justify-content-between align-items-center"
+              >
+                <div class="col-12 col-md-6">
+                  <h2 class="col-12 col-md-9 p-0">
+                    <strong>Storage</strong>
+                    <span class="text-muted">
+                      Configure up to 8TB of SSD storage2
+                    </span>
+                  </h2>
+                  <section class="my-5">
+                    <h4 class="p-0">
+                      <strong>8TB SSD</strong>
+                    </h4>
+                    <span class="text-muted">
+                      <p>Two 4TB modules</p>
+                      <p>
+                        Up to 3.4 Gbps sequential read and 3.4 Gbps sequential
+                        write performance.
+                      </p>
+                      <p>Storage encrypted by the Apple T2 Security Chip.</p>
+                    </span>
+                  </section>
+                </div>
+                <div class="col-0 col-md-6 d-none d-md-block text-center">
+                  <figure class="my-5 p-5">
+                    <img class="w-100" src="/Images/macpro-7.png" alt="" />
+                  </figure>
+                </div>
+              </div>
+              <!-- Storage End -->
+            </div>
+            <!-- Wrapper Div -->
+          </div>
+        </div>
+      </div>
+      <!-- Product Specifications End -->
+    </div>
+    <!-- Product Ends -->
+    <!-- Footer -->
+    <footer class="container-fluid mt-5 ">
+      <div class="container py-md-5">
+        <div
+          class="Wapper-div d-flex flex-column flex-md-row justify-content-around align-items-center"
+        >
+          <div
+            class="col-12 col-md-6 d-flex flex-row justify-content-around align-items-start py-md-5"
+          >
+            <dl>
+              <dt>ABOUT</dt>
+              <dd>Contact Us</dd>
+              <dd>About Us</dd>
+              <dd>Product Details</dd>
+              <dd>Chat</dd>
+            </dl>
+            <dl>
+              <dt>HELP</dt>
+              <dd>Payment</dd>
+              <dd>Shipping</dd>
+              <dd>Cancellation</dd>
+              <dd>FAQ</dd>
+            </dl>
+            <dl>
+              <dt>POLICY</dt>
+              <dd>Return Policy</dd>
+              <dd>Terms</dd>
+              <dd>Security</dd>
+              <dd>Privacy</dd>
+            </dl>
+            <dl>
+              <dt>SOCIAL</dt>
+              <dd>Facebook</dd>
+              <dd>Twitter</dd>
+              <dd>Youtube</dd>
+            </dl>
+          </div>
+          <hr />
+          <div
+            class="col-12 col-md-6 d-flex flex-row justify-content-around align-items-start py-md-5"
+          >
+            <div class="form-group">
+              <div class="my-2">
+                <input class="form-control" type="text" placeholder="E-mail" />
+              </div>
+              <div class="my-2">
+                <input
+                  class="form-control"
+                  type="password"
+                  placeholder="Password"
+                />
+              </div>
+              <button class="btn btn-outline-light">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="Footer container d-flex flex-column flex-md-row justify-content-between align-items-center "
+      >
+        <div class=""><h3>TechFest</h3></div>
+        <div class="text-center">
+          <p>
+            Copyright &copy;2020 All rights reserved | This template is designed
+            by Pikachu
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!--All Scripts -->
+    <script src="/js/jquery-3.4.1.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/jquery.exzoom.js"></script>
+    <script>
+      $(function() {
+        $("#exzoom").exzoom({
+          // options here
+          autoPlay: false
+        });
+      });
+    </script>
+    <!--All Script Ends -->
+  </body>
+</html>

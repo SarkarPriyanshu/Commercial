@@ -11,9 +11,15 @@ document.getElementById("Search_Icon").addEventListener("click", function() {
 var links = document.getElementsByClassName("Catagory-Link");
 for (i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function() {
-    var menu = document.querySelector(".Menu");
-    menu.classList.toggle("Menu_Show");
-    // console.log(links[i]);
+    var title = document.querySelector("title").innerText;
+    console.log(title);
+    if (title === "Tech") {
+      var menu = document.querySelector(".Menu");
+      menu.classList.toggle("Menu_Show");
+    } else {
+      var menu = document.querySelector(".Menu");
+      menu.classList.toggle("Menu_Show_Mac");
+    }
   });
 }
 //Menu End

@@ -89,17 +89,27 @@
   width: 100%;
   background-color: #17b978;
   position: absolute;
-  top: 18rem;
-  z-index: 5;
+  top: 20rem;
+  z-index: -1;
   padding: 3rem 2rem;
-  height: 100vh;
+  height: 40rem;
   transition: all 1s ease;
 }
 .Menu_Show {
+  /* position: fixed; */
+  top: 18rem;
   opacity: 1;
   transition: all 1s ease;
+  z-index: 5;
 }
 
+.Menu_Show_Mac {
+  /* position: fixed; */
+  top: 12rem;
+  opacity: 1;
+  transition: all 1s ease;
+  z-index: 5;
+}
 /* Navigation Styling End */
 /* Latest Arrivals */
 .Latest-Arrival {

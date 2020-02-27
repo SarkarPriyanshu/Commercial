@@ -79,27 +79,29 @@ document.getElementById("Left__Arrow").addEventListener("click", function() {
   Div.style.transition = "all 1s ease";
 });
 //Other Gagets Ends
-
-// window.addEventListener("load", function() {
-//   var width = screen.width;
-//   if (width > 767) {
-//     var links = document.querySelector(".Basic-Option-links").children;
-//     for (i = 0; i < links.length; i++) {
-//       var child = links[i].childNodes;
-//       console.log(child);
-//     }
-//   }
-// });
-
-// function myFunction(x) {
-//   if (x.matches) {
-//     var text = document.querySelector(".link-text");
-//     for (i = 0; i < text.length; i++) {
-//       Console.log(text[i]);
-//     }
-//   }
-// }
-
-// var x = window.matchMedia("(max-width:767px)");
-// myFunction(x);
-// x.addEventListener(myFunction);
+//Scroll Mac Pro Images
+window.onscroll = function() {
+  var Yaxis = window.pageYOffset;
+  console.log(Yaxis);
+  if (Yaxis < 1400) {
+    var SpecImage = document.querySelector(".SpecDiagramImage");
+    SpecImage.src = "http://127.0.0.1:5500/Images/macpro-1.png";
+    SpecImage.style.opacity = "1";
+  } else if (Yaxis > 1399 && Yaxis < 1949) {
+    var SpecImage = document.querySelector(".SpecDiagramImage");
+    SpecImage.src = "http://127.0.0.1:5500/Images/macpro-2.png";
+    // console.log(SpecImage);
+  } else if (Yaxis > 1950 && Yaxis < 2499) {
+    var SpecImage = document.querySelector(".SpecDiagramImage");
+    SpecImage.src = "http://127.0.0.1:5500/Images/macpro-3.png";
+    // console.log(SpecImage);
+  } else if (Yaxis > 2895 && Yaxis < 3516) {
+    var SpecImage = document.querySelector(".SpecDiagramImage");
+    SpecImage.src = "http://127.0.0.1:5500/Images/macpro-4.png";
+    // console.log(SpecImage);
+  } else if (Yaxis > 3517) {
+    var SpecImage = document.querySelector(".SpecDiagramImage");
+    SpecImage.src = "http://127.0.0.1:5500/Images/macpro-6.png";
+  }
+};
+//Scroll Mac Pro Images End

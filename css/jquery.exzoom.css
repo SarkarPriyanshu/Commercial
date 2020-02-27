@@ -40,7 +40,7 @@
   margin-top: 10px;
   overflow: hidden;
   position: relative;
-  /* left: 15px; */
+  left: 0px;
 }
 .exzoom .exzoom_nav .exzoom_nav_inner {
   position: absolute;

@@ -5,3 +5,14 @@
   margin: 0;
   padding: 0;
 }
+.SpecDiagram {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 1rem;
+  /* bottom: 5rem; */
+}
+img.SpecDiagramImage {
+  transition: all 1s ease;
+}

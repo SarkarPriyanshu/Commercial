@@ -80,28 +80,5 @@ document.getElementById("Left__Arrow").addEventListener("click", function() {
 });
 //Other Gagets Ends
 //Scroll Mac Pro Images
-window.onscroll = function() {
-  var Yaxis = window.pageYOffset;
-  console.log(Yaxis);
-  if (Yaxis < 1400) {
-    var SpecImage = document.querySelector(".SpecDiagramImage");
-    SpecImage.src = "http://127.0.0.1:5500/Images/macpro-1.png";
-    SpecImage.style.opacity = "1";
-  } else if (Yaxis > 1399 && Yaxis < 1949) {
-    var SpecImage = document.querySelector(".SpecDiagramImage");
-    SpecImage.src = "http://127.0.0.1:5500/Images/macpro-2.png";
-    // console.log(SpecImage);
-  } else if (Yaxis > 1950 && Yaxis < 2499) {
-    var SpecImage = document.querySelector(".SpecDiagramImage");
-    SpecImage.src = "http://127.0.0.1:5500/Images/macpro-3.png";
-    // console.log(SpecImage);
-  } else if (Yaxis > 2895 && Yaxis < 3516) {
-    var SpecImage = document.querySelector(".SpecDiagramImage");
-    SpecImage.src = "http://127.0.0.1:5500/Images/macpro-4.png";
-    // console.log(SpecImage);
-  } else if (Yaxis > 3517) {
-    var SpecImage = document.querySelector(".SpecDiagramImage");
-    SpecImage.src = "http://127.0.0.1:5500/Images/macpro-6.png";
-  }
-};
+
 //Scroll Mac Pro Images End

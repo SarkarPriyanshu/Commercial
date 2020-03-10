@@ -7,13 +7,13 @@
     <title class="title">Mac Pro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <!-- Font Awesome Link -->
-    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
     <!-- Custom Css Link -->
-    <link rel="stylesheet" href="./css/MacPro.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/jquery.exzoom.css" />
+    <link rel="stylesheet" href="../css/MacPro.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/jquery.exzoom.css" />
   </head>
   <body>
     <!-- Navigation -->
@@ -551,11 +551,11 @@
     </footer>
     <!-- Footer End -->
     <!--All Scripts -->
-    <script src="./js/jquery-3.4.1.js"></script>
-    <script src="./js/popper.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/jquery.exzoom.js"></script>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/jquery.exzoom.js"></script>
     <script>
       $(function() {
         $("#exzoom").exzoom({
@@ -569,7 +569,7 @@
         if (Yaxis < 1400) {
           var SpecImage = document.querySelector(".SpecDiagramImage");
           SpecImage.src = "/Images/macpro-1.png";
-          SpecImage.style.opacity = "1";
+          SpecImage.style.transition = "all 0.5s ease";
         } else if (Yaxis > 1399 && Yaxis < 1949) {
           var SpecImage = document.querySelector(".SpecDiagramImage");
           SpecImage.src = "/Images/macpro-2.png";

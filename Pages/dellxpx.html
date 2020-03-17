@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/css/all.min.css" />
     <!-- Custom css Link -->
     <link rel="stylesheet" href="/css/index.css" />
+    <!--Swiper Js Css Stylesheet-->
+    <link rel="stylesheet" href="../css/swiper.css" />
   </head>
   <body>
     <!-- Navigation -->
@@ -259,5 +261,112 @@
       <!-- Branding -->
     </div>
     <!-- Navigation End -->
+    <!-- Main Content -->
+    <main class="container-fluid">
+      <div class="container">
+        <!-- Swiper Slider -->
+        <div class="swiper-container my-5 py-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../Images/xps-1.png" alt="Dell Xps" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../Images/xps-2.png" alt="Dell Xps" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../Images/xps-3.png" alt="Dell Xps" />
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- Swiper Slider End-->
+      </div>
+    </main>
+    <!-- Main Content End -->
+    <!-- Footer -->
+    <footer class="container-fluid mt-5 ">
+      <div class="container py-md-5">
+        <div
+          class="Wapper-div d-flex flex-column flex-md-row justify-content-around align-items-center"
+        >
+          <div
+            class="col-12 col-md-6 d-flex flex-row justify-content-around align-items-start py-md-5"
+          >
+            <dl>
+              <dt>ABOUT</dt>
+              <dd>Contact Us</dd>
+              <dd>About Us</dd>
+              <dd>Product Details</dd>
+              <dd>Chat</dd>
+            </dl>
+            <dl>
+              <dt>HELP</dt>
+              <dd>Payment</dd>
+              <dd>Shipping</dd>
+              <dd>Cancellation</dd>
+              <dd>FAQ</dd>
+            </dl>
+            <dl>
+              <dt>POLICY</dt>
+              <dd>Return Policy</dd>
+              <dd>Terms</dd>
+              <dd>Security</dd>
+              <dd>Privacy</dd>
+            </dl>
+            <dl>
+              <dt>SOCIAL</dt>
+              <dd>Facebook</dd>
+              <dd>Twitter</dd>
+              <dd>Youtube</dd>
+            </dl>
+          </div>
+          <hr />
+          <div
+            class="col-12 col-md-6 d-flex flex-row justify-content-around align-items-start py-md-5"
+          >
+            <div class="form-group">
+              <div class="my-2">
+                <input class="form-control" type="text" placeholder="E-mail" />
+              </div>
+              <div class="my-2">
+                <input
+                  class="form-control"
+                  type="password"
+                  placeholder="Password"
+                />
+              </div>
+              <button class="btn btn-outline-light">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="Footer container d-flex flex-column flex-md-row justify-content-between align-items-center "
+      >
+        <div class=""><h3>TechFest</h3></div>
+        <div class="text-center">
+          <p>
+            Copyright &copy;2020 All rights reserved | This template is designed
+            by Pikachu
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!--All Scripts -->
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true
+        }
+      });
+    </script>
   </body>
 </html>
